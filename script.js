@@ -12,17 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.body.insertAdjacentHTML("afterbegin", navHTML);
 
-    const footerHTML = `
-    <footer>
-        <p>&copy; Treasure Planet Fan Vault. Build for Explores of the Etherium.</p>
-    </footer>
-    `;
-    document.body,insertAdjacentHTML("beforeend", footerHTML);
-
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const currentPage = window.locationHTML("afterbegin", navHTML);
     document.querySelectorAll(".nav-links a").forEach(link => {
         if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
+            link.classlist.add("active");
         }
     });
 });
